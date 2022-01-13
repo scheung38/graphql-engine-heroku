@@ -106,3 +106,31 @@ and everything. You can also contact us using one of the following channels:
 - [Authentication/Access control](https://docs.hasura.io/1.0/graphql/manual/auth/index.html)
 - [Database Migrations](https://docs.hasura.io/1.0/graphql/manual/migrations/index.html)
 - [Guides/Tutorials/Resources](https://docs.hasura.io/1.0/graphql/manual/guides/index.html)
+
+
+
+heroku login
+✗ heroku create rtl-backend --stack=container
+ ›   Warning: heroku update available from 7.59.0 to 7.59.2.
+Creating ⬢ rtl-backend... done, stack is container
+https://rtl-backend.herokuapp.com/ | https://git.heroku.com/rtl-backend.git
+
+✗ heroku addons:create heroku-postgresql:hobby-dev -a rtl-backend  
+ ›   Warning: heroku update available from 7.59.0 to 7.59.2.
+Creating heroku-postgresql:hobby-dev on ⬢ rtl-backend... free
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pg:copy
+Created postgresql-cubed-77153 as DATABASE_URL
+Use heroku addons:docs heroku-postgresql to view documentation
+
+https://dashboard.heroku.com/apps
+
+then
+
+https://dashboard.heroku.com/apps/rtl-backend
+
+then Resources
+
+will show Heroku Postgres 
+
