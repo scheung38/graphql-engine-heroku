@@ -134,3 +134,35 @@ then Resources
 
 will show Heroku Postgres 
 
+
+➜ heroku git:remote -a rtl-backend
+
+
+➜ git push heroku master
+
+Screenshot 2022-01-13 at 15.16.26.png
+
+
+Now we van make a database migration
+
+➜ npm i -g hasura-cli
+
+
+Below is process for data migration 
+
+✗ hasura init rm_migrations
+INFO a new pre-release version is available:
+- v2.1.0-beta.3 (changelog: https://github.com/hasura/graphql-engine/releases/tag/v2.1.0-beta.3)
+to update cli to this version, execute:
+
+  hasura update-cli --version v2.1.0-beta.3
+ 
+INFO directory created. execute the following commands to continue:
+
+  cd rm_migrations
+  hasura console 
+
+But need to change 8080 to 8081
+
+endpoint: http://localhost:8080 ->
+endpoint: http://localhost:8081
